@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Today from "./pages/Today";
 import Message from "./pages/Message";
 import LastActivity from "./pages/LastActivity";
+import NewTask from "./pages/NewTask";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
   {
     path: "/last-activity",
     element: <LastActivity />,
+  },
+  {
+    path: "/new-task",
+    element: <NewTask />,
   },
 ]);
 function App() {

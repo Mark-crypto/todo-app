@@ -1,0 +1,21 @@
+h6 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-links {
+  border-bottom: 1px solid #e1e1e1;
+}
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.nav-links ul li a {
+  padding: 0 20px;
+  color: black;
+  text-decoration: none;
+}
+.active {
+  font-weight: bold;
+}
