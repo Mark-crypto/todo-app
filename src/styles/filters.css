@@ -1,0 +1,15 @@
+.filter ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 70px;
+}
+.filter ul li {
+  cursor: pointer;
+}
+.active-filter {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+}
