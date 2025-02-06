@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 const Navbar = () => {
   return (
     <>
-      <h6>TO DO APP</h6>
+      <h5 style={{ backgroundColor: "#f4f4f4" }}>TO DO APP</h5>
 
       <div className="nav-links">
         <ul>
@@ -12,7 +12,7 @@ const Navbar = () => {
             <a href="/message">Messages</a>
           </li>
           <li>
-            <a href="/today" className="active">
+            <a href="/" className="active">
               Today's Task
             </a>
           </li>

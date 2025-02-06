@@ -1,8 +1,13 @@
 import React from "react";
 import "../styles/message.css";
+import Navbar from "../components/Navbar";
 
 const Message = () => {
-  return <div>Message</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default Message;

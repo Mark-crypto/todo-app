@@ -44,9 +44,11 @@ const Today = () => {
             </h4>
           </div>
           <div className="section1B">
-            <Button variant="primary" style={{ fontWeight: "bold" }}>
-              <span style={{ fontSize: "20px" }}>+</span> New Task
-            </Button>
+            <a href="/new-task">
+              <Button variant="primary" style={{ fontWeight: "bold" }}>
+                <span style={{ fontSize: "20px" }}>+</span> New Task
+              </Button>
+            </a>
           </div>
         </div>
         <Filters />
