@@ -1,0 +1,16 @@
+.lastactivity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.activity {
+  color: white;
+  background-color: rgb(76, 76, 255);
+  height: 100px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
