@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <h5 style={{ backgroundColor: "#f4f4f4" }}>TO DO APP</h5>
-
       <div className="nav-links">
         <ul>
           <li>
-            <a href="/message">Messages</a>
+            <NavLink
+              to="/message"
+              className={({ isActive }) => (isActive ? " active" : "nav-link")}
+              style={{ paddingRight: "20px" }}
+            >
+              Messages
+            </NavLink>
           </li>
           <li>
-            <a href="/" className="active">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? " active" : "nav-link")}
+              style={{ paddingRight: "20px" }}
+            >
               Today's Task
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/last-activity">Last Activity</a>
+            <NavLink
+              to="/last-activity"
+              className={({ isActive }) => (isActive ? " active" : "nav-link")}
+              style={{ paddingRight: "20px" }}
+            >
+              Last Activity
+            </NavLink>
           </li>
         </ul>
       </div>

@@ -1,22 +1,25 @@
-import React from "react";
+import { useState } from "react";
 import "../styles/single-activity.css";
 import { ImCheckboxChecked } from "react-icons/im";
 import { IoPersonCircle } from "react-icons/io5";
 
 const SingleActivity = () => {
+  const [checked, setChecked] = useState(true);
   return (
     <>
       <div className="card">
         <div className="card-top">
           <div className="card-title">
-            <h5>Client Review & Feedback</h5>
+            <h5 className={checked ? "line-through" : ""}>
+              Client Review & Feedback
+            </h5>
             <p style={{ color: "gray" }}>Crypto wallet redesign</p>
           </div>
           <div
             className="card-check"
             style={{ fontSize: "20px", color: "blue" }}
           >
-            <ImCheckboxChecked />
+            {checked ? <ImCheckboxChecked /> : ""}
           </div>
         </div>
         <div className="card-bottom">
